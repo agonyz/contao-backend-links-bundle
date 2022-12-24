@@ -1,0 +1,7 @@
+services:
+    _defaults:
+        autoconfigure: true
+
+    Agonyz\ContaoBackendLinksBundle\EventListener\BackendMenuListener:
+        ['@security.helper', '@contao.csrf.token_manager']
+
